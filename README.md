@@ -35,6 +35,7 @@ Features:
 - [📜 Scrollable Page](https://nocode-js.github.io/sequential-workflow-designer/examples/scrollable-page.html)
 - [🌵 Multi-Conditional Switch](https://nocode-js.github.io/sequential-workflow-designer/examples/multi-conditional-switch.html)
 - [🌀 Auto-Select](https://nocode-js.github.io/sequential-workflow-designer/examples/auto-select.html)
+- [🔄 Step Changes Detection](https://nocode-js.github.io/sequential-workflow-designer/examples/step-changes-detection.html)
 - [Angular Demo](https://nocode-js.github.io/sequential-workflow-designer/angular-app/)
 - [React Demo](https://nocode-js.github.io/sequential-workflow-designer/react-app/)
 - [Svelte Demo](https://nocode-js.github.io/sequential-workflow-designer/svelte-app/)

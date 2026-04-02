@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<title>🔄 Step Changes Detection - Sequential Workflow Designer</title>
+		<meta property="og:title" content="🔄 Step Changes Detection - Sequential Workflow Designer" />
+		<meta
+			name="description"
+			content="Example showing how to detect what changed in a workflow definition, including which steps were added and which were removed."
+		/>
+		<meta
+			property="og:description"
+			content="Example showing how to detect what changed in a workflow definition, including which steps were added and which were removed."
+		/>
+		<meta property="og:image" content="https://nocode-js.com/img/social-card.png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="🔄 Step Changes Detection - Sequential Workflow Designer" />
+		<meta
+			name="twitter:description"
+			content="Example showing how to detect what changed in a workflow definition, including which steps were added and which were removed."
+		/>
+		<meta name="twitter:image" content="https://nocode-js.com/img/social-card.png" />
+
+		<link rel="icon" href="./assets/favicon.ico" />
+		<link rel="stylesheet" href="./assets/common.css" />
+		<style>
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			body {
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+			}
+			.content {
+				flex: 1;
+				display: flex;
+				min-height: 0;
+			}
+			#designer {
+				flex: 1;
+				min-width: 0;
+			}
+			.info-panel {
+				width: 20%;
+				min-width: 260px;
+				padding: 24px;
+				box-sizing: border-box;
+				background: #f9fafb;
+				border-left: 1px solid #e5e7eb;
+				overflow: auto;
+			}
+			.info-panel h1 {
+				margin: 0 0 12px;
+				font-size: 1.4rem;
+				line-height: 1.2;
+			}
+			.info-panel p {
+				margin: 0;
+				line-height: 1.5;
+				color: #334155;
+			}
+			.info-panel .section-title {
+				margin: 24px 0 10px;
+				font-size: 1rem;
+				line-height: 1.2;
+			}
+			.changes-output {
+				margin: 0;
+				padding: 12px;
+				background: #ffffff;
+				border: 1px solid #dbe3ea;
+				border-radius: 8px;
+				color: #111827;
+				line-height: 1.5;
+				white-space: pre-wrap;
+				word-break: break-word;
+			}
+
+			@media (max-width: 900px) {
+				.content {
+					flex-direction: column;
+					height: 100%;
+				}
+				#designer {
+					flex: 0 0 70%;
+					height: 70%;
+				}
+				.info-panel {
+					width: 100%;
+					height: 30%;
+					flex: 0 0 30%;
+					min-width: 0;
+					border-left: 0;
+					border-top: 1px solid #e5e7eb;
+					overflow: auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="title-bar">
+			<div class="column flex-1">
+				<h1>🔄 Step Changes Detection</h1>
+			</div>
+			<div class="column text-end flex-1 text-gray">
+				<a href="https://github.com/nocode-js/sequential-workflow-designer" target="_blank">GitHub</a> |
+				<a href="https://nocode-js.com" target="_blank">NoCode JS</a>
+			</div>
+		</header>
+
+		<div class="content">
+			<div id="designer"></div>
+			<aside class="info-panel">
+				<h1>Step Changes Detection</h1>
+				<p>
+					This example demonstrates how to detect what changed in the workflow definition. It focuses on identifying which steps
+					were added and which steps were removed.
+				</p>
+				<h2 class="section-title">Recent Changes</h2>
+				<pre id="recentChanges" class="changes-output">No changes</pre>
+			</aside>
+		</div>
+
+		<script src="./assets/lib.js"></script>
+		<script src="./assets/step-changes-detection.js"></script>
+	</body>
+</html>
